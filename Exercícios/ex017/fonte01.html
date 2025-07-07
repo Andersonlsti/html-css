@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm - Centímetro, mm - Milímetro, in - Polegada, px - Pixel, pt - Ponto, pc - Paica
+            cm, mm são medidas de distâncias não tão usais para dispositivos eletrônicos devido o tamanho de telas dirvegentes
+            px pode causar problemas devido a tela de retina, um tipo de tela que usa 1/4 de pixel como sendo pixel
+            pt e pc são medidas utilizadas em papel
+
+            Meidas Relativas
+            em - tamanho atual da fonte (Relativo ao M de uma fonte), ex - altura x de uma fonte, rem - tamanho relativo à fonte configurada no body, vw - Largura da View Port (tamanho da tela) em %, vh - Altura da View Port, %
+
+            As recomendadas pela W3C são 'px' e 'em'
+            16px geralmente = 1em
+            */
+        }
+        h1, h2 {
+            /*
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-style: italic;
+            font-size: 3em;
+
+            pode-se usar também o ShortHand font resumindo as 4 linhas acima em uma só, porém sempre obedecendo uma ordem específica: font-style -> font weight -> font-size -> font-family
+            ficando desta forma por exemplo
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eligendi a beatae provident est nulla. Magnam odio fuga illo maxime, ratione ea totam nihil. Sapiente iure odit est odio quos! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa nostrum odio deleniti excepturi ad ut illum! Aperiam sequi consequatur perspiciatis enim! Est fuga quasi explicabo similique, soluta velit voluptatem et? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem doloremque deserunt esse fugiat incidunt dolorem odio tempora iste at laborum aut quis, non culpa doloribus labore quod! Ex, explicabo itaque.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A error ut maxime ab, amet est enim at. Accusantium, tempora maxime unde eligendi non quisquam quidem sequi. Aliquid maiores veniam cupiditate?</p>
+    <h2>Substítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quae molestias non sed fugit aperiam earum nesciunt cupiditate eius corrupti sit vero at, illum debitis esse omnis placeat, voluptatem pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis delectus quis eos. Voluptates at tenetur, quisquam praesentium veniam veritatis perspiciatis, quas debitis sequi fugiat officia esse aliquid excepturi sed totam.</p>
+</body>
+</html>
