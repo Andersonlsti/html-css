@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 300px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: gray;
+            color: aqua;
+        }
+
+        td,th {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        td.num {
+            text-align: right;
+        }
+        td:hover {
+            background-color: red;
+            color: blue;
+            font-weight: bolder;
+        }
+        
+        tfoot > tr > td {
+            font-weight: bold;
+        }
+
+        tbody > tr:nth-child(even) /*2n*/ {
+            background-color: yellow;
+            color: green;
+        }
+
+        tbody > tr:nth-child(odd) /*2n-1*/ {
+            background-color: green;
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Anatomia para tabelas grandes
+    Table
+    THead
+        TR, TD, TH
+    Tbody
+        TR, TD, TH
+    Tfoot
+        TR, TD, TH
+    -->
+    <h1>Uso de Tabelas Grandes</h1>
+    <table>
+        <caption>População dos Lugares</caption>
+        <thead>
+            <tr>
+                <th>Estado</td>
+                <th style="width: 50px;">População</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">124546831</td>
+            </tr>
+            <tr>
+                <td>Bangladesh</td>
+                <td class="num">1254789</td>
+            </tr>
+            <tr>
+                <td>Calionoma</td>
+                <td class="num">12569874</td>
+            </tr>
+            <tr>
+                <td>Tchchyuk</td>
+                <td class="num">325674</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <td class="num">321654987</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam sit dicta enim architecto, ullam laborum voluptatum, accusamus consequuntur harum distinctio ipsa, animi aliquid explicabo voluptatem quas voluptatibus earum. Sequi, distinctio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti aperiam voluptatum consectetur ab, autem veritatis quasi architecto commodi natus ipsa, dolor eum facilis ut necessitatibus est quo maxime blanditiis illo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias reiciendis assumenda ipsum reprehenderit! Impedit odio eveniet quo doloremque omnis culpa sequi sunt, sed illo cum quisquam autem laboriosam sapiente rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae totam aspernatur voluptates nesciunt ad, autem alias nostrum, praesentium fugiat ipsum hic? Possimus, fugiat consequuntur esse reprehenderit blanditiis maiores inventore cupiditate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic mollitia tempora quos veritatis praesentium incidunt, similique fuga odio omnis eum magnam maxime molestias natus iusto quisquam nulla ea. Perferendis, dolorum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam sit dicta enim architecto, ullam laborum voluptatum, accusamus consequuntur harum distinctio ipsa, animi aliquid explicabo voluptatem quas voluptatibus earum. Sequi, distinctio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti aperiam voluptatum consectetur ab, autem veritatis quasi architecto commodi natus ipsa, dolor eum facilis ut necessitatibus est quo maxime blanditiis illo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias reiciendis assumenda ipsum reprehenderit! Impedit odio eveniet quo doloremque omnis culpa sequi sunt, sed illo cum quisquam autem laboriosam sapiente rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae totam aspernatur voluptates nesciunt ad, autem alias nostrum, praesentium fugiat ipsum hic? Possimus, fugiat consequuntur esse reprehenderit blanditiis maiores inventore cupiditate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic mollitia tempora quos veritatis praesentium incidunt, similique fuga odio omnis eum magnam maxime molestias natus iusto quisquam nulla ea. Perferendis, dolorum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam sit dicta enim architecto, ullam laborum voluptatum, accusamus consequuntur harum distinctio ipsa, animi aliquid explicabo voluptatem quas voluptatibus earum. Sequi, distinctio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti aperiam voluptatum consectetur ab, autem veritatis quasi architecto commodi natus ipsa, dolor eum facilis ut necessitatibus est quo maxime blanditiis illo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias reiciendis assumenda ipsum reprehenderit! Impedit odio eveniet quo doloremque omnis culpa sequi sunt, sed illo cum quisquam autem laboriosam sapiente rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae totam aspernatur voluptates nesciunt ad, autem alias nostrum, praesentium fugiat ipsum hic? Possimus, fugiat consequuntur esse reprehenderit blanditiis maiores inventore cupiditate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic mollitia tempora quos veritatis praesentium incidunt, similique fuga odio omnis eum magnam maxime molestias natus iusto quisquam nulla ea. Perferendis, dolorum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam sit dicta enim architecto, ullam laborum voluptatum, accusamus consequuntur harum distinctio ipsa, animi aliquid explicabo voluptatem quas voluptatibus earum. Sequi, distinctio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti aperiam voluptatum consectetur ab, autem veritatis quasi architecto commodi natus ipsa, dolor eum facilis ut necessitatibus est quo maxime blanditiis illo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias reiciendis assumenda ipsum reprehenderit! Impedit odio eveniet quo doloremque omnis culpa sequi sunt, sed illo cum quisquam autem laboriosam sapiente rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae totam aspernatur voluptates nesciunt ad, autem alias nostrum, praesentium fugiat ipsum hic? Possimus, fugiat consequuntur esse reprehenderit blanditiis maiores inventore cupiditate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic mollitia tempora quos veritatis praesentium incidunt, similique fuga odio omnis eum magnam maxime molestias natus iusto quisquam nulla ea. Perferendis, dolorum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam sit dicta enim architecto, ullam laborum voluptatum, accusamus consequuntur harum distinctio ipsa, animi aliquid explicabo voluptatem quas voluptatibus earum. Sequi, distinctio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti aperiam voluptatum consectetur ab, autem veritatis quasi architecto commodi natus ipsa, dolor eum facilis ut necessitatibus est quo maxime blanditiis illo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias reiciendis assumenda ipsum reprehenderit! Impedit odio eveniet quo doloremque omnis culpa sequi sunt, sed illo cum quisquam autem laboriosam sapiente rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae totam aspernatur voluptates nesciunt ad, autem alias nostrum, praesentium fugiat ipsum hic? Possimus, fugiat consequuntur esse reprehenderit blanditiis maiores inventore cupiditate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic mollitia tempora quos veritatis praesentium incidunt, similique fuga odio omnis eum magnam maxime molestias natus iusto quisquam nulla ea. Perferendis, dolorum?</p>
+
+</body>
+</html>
