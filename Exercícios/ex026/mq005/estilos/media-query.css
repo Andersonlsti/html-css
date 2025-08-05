@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/*Typical Devices Breakpoint
+Small Mobile (Portrait): 320px - 480px.
+Large Mobile (Landscape): 481px - 767px.
+Tablet (Portrait): 768px - 1024px.
+Desktop (Small): 1025px - 1200px.
+Desktop (Large): 1201px and up*/
+
+@media screen and (min-width: 768px) {
+    i#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        max-width: 768px;
+    }
+}
