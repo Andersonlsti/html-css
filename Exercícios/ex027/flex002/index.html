@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Boxes</title>
+    <style>
+        div.container {
+            background-color: green;
+            border: 5px solid red;
+            display: flex;
+        }
+
+        div.itens {
+            background-color: blue;
+            border: 3px solid purple;
+            padding: 10px;
+        }
+
+        div#rreverso {
+            flex-direction: row-reverse;
+        }
+        
+        div#c {
+            flex-direction: column;
+            width: 50px;
+            height: 450px;
+        }
+
+        div#rcoluna {
+            flex-direction: column-reverse;
+            width: 50px;
+            height: 450px;
+        }
+    </style>
+</head>
+<body>
+    <p>Flex-Direction: Row</p>
+    <div class="container">
+        <div class="itens">A</div>
+        <div class="itens">B</div>
+        <div class="itens">C</div>
+        <div class="itens">D</div>
+        <div class="itens">E</div>
+        <div class="itens">F</div>
+        <div class="itens">G</div>
+        <div class="itens">H</div>
+    </div>
+    <p style="text-align: right;">Flex-Direction: Row-Reverse</p>
+    <div class="container" id="rreverso">
+        <div class="itens">A</div>
+        <div class="itens">B</div>
+        <div class="itens">C</div>
+        <div class="itens">D</div>
+        <div class="itens">E</div>
+        <div class="itens">F</div>
+        <div class="itens">G</div>
+        <div class="itens">H</div>
+    </div>
+    <p>Flex-Direction: Column</p>
+    <div class="container" id="c">
+        <div class="itens">A</div>
+        <div class="itens">B</div>
+        <div class="itens">C</div>
+        <div class="itens">D</div>
+        <div class="itens">E</div>
+        <div class="itens">F</div>
+        <div class="itens">G</div>
+        <div class="itens">H</div>
+    </div>
+    <p>Flex-Direction: Column-Reverse</p>
+    <div class="container" id="rcoluna">
+        <div class="itens">A</div>
+        <div class="itens">B</div>
+        <div class="itens">C</div>
+        <div class="itens">D</div>
+        <div class="itens">E</div>
+        <div class="itens">F</div>
+        <div class="itens">G</div>
+        <div class="itens">H</div>
+    </div>
+</body>
+</html>
