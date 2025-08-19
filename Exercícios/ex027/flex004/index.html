@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Boxes</title>
+    <style>
+        div.container {
+            background-color: green;
+            border: 5px solid red;
+            height: 300px;
+            display: flex;
+            flex-flow: row nowrap;
+            /*justify-content
+            space-around - distribui os itens em caixas de tamanho igual
+            space-between - fixa o primeiro item no Main Start e o último no Main End distribuindo o espaço restante por igual entre os outros
+            space-evenly - distribui espaços iguais entre todos os itens incluindo antes do primeiro e após o último sendo igual ao espaço entre os itens*/
+            justify-content: space-evenly;
+            /*padrão stretch, estica ocupando toda a Cross Axis*/
+            align-items: center;
+        }
+
+        div.itens {
+            background-color: blue;
+            border: 3px solid purple;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="itens">A</div>
+        <div class="itens">B</div>
+        <div class="itens">C</div>
+        <div class="itens">D</div>
+        <div class="itens">E</div>
+        <div class="itens">F</div>
+        <div class="itens">G</div>
+        <div class="itens">H</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Centralizado</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            height: 80vw;
+            width: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main {
+            background-color: lightcoral;
+            height: 50vw;
+            width: 75vh;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section {
+            background-color: lightgreen;
+            width: 50vh;
+            height: 30vw;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div {
+            background-color: lightblue;
+            width: 25vh;
+            height: 13vw;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div>
+                <h1>Tela de Login</h1>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
