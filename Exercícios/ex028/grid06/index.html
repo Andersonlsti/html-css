@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de grid</title>
+    <style>
+        div.container {
+            display: grid;
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: repeat(4, 1fr);
+        }
+        /*grid-area: RS / CS / RE / CE
+        R - Row; C - Column; S - Start; E - End*/
+        div.cx1 {
+            background-color: red;
+            grid-area: 1 / 1 / 2 / span 4;
+        }
+
+        div.cx2 {
+            background-color: green;
+            grid-area: 2 / 1 / 4 / 3;
+        }
+
+        div.cx3 {
+            background-color: blue;
+            grid-area: 2 / 3 / 4 / 5;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cx1">Caixa 1</div>
+        <div class="cx2">Caixa 2</div>
+        <div class="cx3">Caixa 3</div>
+    </div>
+</body>
+</html>

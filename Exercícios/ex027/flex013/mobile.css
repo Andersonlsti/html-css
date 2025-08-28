@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+header {
+    display: flex;
+    flex-flow: column;
+}
+
+h1 {
+    flex: 0 0 50px;
+}
+nav {
+    flex-flow: column;
+    width: 90vw;
+}
